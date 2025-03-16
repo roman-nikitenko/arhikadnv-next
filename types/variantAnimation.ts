@@ -1,4 +1,4 @@
-import { AnimationType } from './animation.ts';
+import { AnimationType } from './animation';
 
 export const variantLeft: AnimationType = {
   hidden: {
