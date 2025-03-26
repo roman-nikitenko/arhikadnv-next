@@ -8,28 +8,26 @@ type NavigationProps = {
 }
 
 export const Navigation: React.FC<NavigationProps> = ({ listStyle }) => {
-  // const { projectsSectionRef, aboutSectionRef, servicesSectionRef } = useContext(ModalContext)
-  
   const links = [
     {
       id: 1,
       title: "Головна",
-      refLink: null
+      refLink: '#home'
     },
     {
       id: 2,
       title: "Компанія",
-      // refLink: aboutSectionRef
+      refLink: '#company',
     },
     {
       id: 3,
       title: "Послуги",
-      // refLink: servicesSectionRef
+      refLink: '#service',
     },
     {
       id: 4,
       title: "Проекти",
-      // refLink: projectsSectionRef
+      refLink: '#projects',
     },
   ]
   
@@ -37,7 +35,7 @@ export const Navigation: React.FC<NavigationProps> = ({ listStyle }) => {
     <div className="navbar text-[var(--light)] hidden md:block">
       <ul className={ `flex gap-10 ${ listStyle }` }>
         { links.map(link => (
-          <NavBarLink key={link.id} title={link.title} onClick={moveToSection} refSection={null} />
+          <NavBarLink key={link.id} title={link.title} scrollToId={link.refLink} />
         )) }
       </ul>
     </div>

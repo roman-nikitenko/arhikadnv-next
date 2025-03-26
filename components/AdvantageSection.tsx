@@ -32,7 +32,7 @@ export const AdvantageSection: React.FC = () => {
       </div>
       <div className="h-[440px] md:w-[370px] group relative">
         <div className="absolute border border-black size-full -z-10 -left-3 -top-3" />
-        <Image src={plan2} alt="" className="w-full h-full object-cover" />
+        <img src={plan2.src} alt="" className="w-full h-full object-cover" />
       </div>
     </section>
   );

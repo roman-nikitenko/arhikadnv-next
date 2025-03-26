@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
   useNoScroll(isOpen);
 
   return (
-    <header className="header relative bg-cover md:bg-center overflow-hidden bg-[-300px] bg-no-repeat h-screen w-full mb-[80px]">
+    <header id='home' className="header relative bg-cover md:bg-center overflow-hidden bg-[-300px] bg-no-repeat h-screen w-full mb-[80px]">
       <div className="absolute inset-0 -z-10 bg-center bg-cover bg-[url('../public/arhicadnv-main.png')]" />
       <div className="bg-[#24272B]/[0.5] h-full">
         <div className="fixed z-50 w-full">

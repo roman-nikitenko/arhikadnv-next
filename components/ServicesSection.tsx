@@ -28,7 +28,7 @@ export const ServicesSection: React.FC = () => {
   ];
   
   return (
-    <section className="section-md md:px-0 px-4 scroll-mt-28">
+    <section id='service' className="section-md md:px-0 px-4 scroll-mt-28">
       <div className="w-full flex flex-col gap-y-8">
         <SectionSubTitle title="основні послуги" />
         <h2 className="md:text-6xl text-5xl font-bold">Послуги</h2>

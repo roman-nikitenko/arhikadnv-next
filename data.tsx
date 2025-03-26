@@ -22,12 +22,12 @@ export const portfolioList: PortfolioCardType[] = [
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse hic impedit quae repudiandae ullam.",
     typeOfWork: typeWork.construction,
-    backgroundImage: "./public/portfolio/project1/101-BB-01-pages-1.jpg",
+    backgroundImage: project1.src,
     listOfWorks: [
-      "./public/portfolio/project1/101-BB-01-pages-1.jpg",
-      "./public/portfolio/project1/101-BB-01-pages-2.jpg",
-      "./public/portfolio/project1/101-BB-01-pages-3.jpg",
-      "./public/portfolio/project1/101-BB-01-pages-4.jpg",
+      project1.src,
+      project2.src,
+      project3.src,
+      project4.src,
     ],
   },
   {
@@ -36,12 +36,12 @@ export const portfolioList: PortfolioCardType[] = [
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse hic impedit quae repudiandae ullam.",
     typeOfWork: typeWork.design,
-    backgroundImage: "./public/portfolio/project2/Screenshot 2024-07-02.jpg",
+    backgroundImage: project2_2.src,
     listOfWorks: [
-      "./public/portfolio/project2/Screenshot 2024-07-01.jpg",
-      "./public/portfolio/project2/Screenshot 2024-07-02.jpg",
-      "./public/portfolio/project2/Screenshot 2024-07-03.jpg",
-      "./public/portfolio/project2/Screenshot 2024-07-04.png",
+      project2_1.src,
+      project2_2.src,
+      project2_3.src,
+      project2_4.src,
     ],
   },
   {
@@ -50,11 +50,11 @@ export const portfolioList: PortfolioCardType[] = [
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse hic impedit quae repudiandae ullam.",
     typeOfWork: typeWork.remodeling,
-    backgroundImage: "./public/portfolio/project3/Screenshot 2024-07-03.jpg",
+    backgroundImage: project3_3.src,
     listOfWorks: [
-      "./public/portfolio/project3/Screenshot 2024-07-01.jpg",
-      "./public/portfolio/project3/Screenshot 2024-07-02.jpg",
-      "./public/portfolio/project3/Screenshot 2024-07-03.jpg",
+      project3_1.src,
+      project3_2.src,
+      project3_3.src,
     ],
   },
   {
@@ -63,11 +63,11 @@ export const portfolioList: PortfolioCardType[] = [
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque esse hic impedit quae repudiandae ullam.",
     typeOfWork: typeWork.remodeling,
-    backgroundImage: "./public/portfolio/project3/Screenshot 2024-07-03.jpg",
+    backgroundImage: project3_3.src,
     listOfWorks: [
-      "./public/portfolio/project3/Screenshot 2024-07-01.jpg",
-      "./public/portfolio/project3/Screenshot 2024-07-02.jpg",
-      "./public/portfolio/project3/Screenshot 2024-07-03.jpg",
+      project3_1.src,
+      project3_2.src,
+      project3_3.src,
     ],
   },
 ];

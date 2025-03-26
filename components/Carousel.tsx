@@ -34,14 +34,12 @@ export const Carousel: React.FC<CarouselProps> = ({ images = [], setCurrent, cur
         </button>
       </div>
       <div className="flex transition-transform ease-out duration-700" style={{ transform: `translateX(-${current * 100}%)` }}>
-        {images.map(image => <Image src={image} alt="Image" />  )}
+        {images.map((image, index) => <img key={image + index} src={image} alt="Image" />  )}
       </div>
       <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-4">
         {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}
-        {images.map((_, index) => {
-          console.log(_);
-          
-          return <div onClick={() => setCurrent(index)} className={`bg-white rounded-full transition-all duration-150 size-2.5 cursor-pointer hover:scale-[1.4] ${index === current ? ' scale-[1.4]' : 'bg-opacity-50'}`} />
+        {images.map((img, index) => {
+          return <div key={img + index}  onClick={() => setCurrent(index)} className={`bg-white rounded-full transition-all duration-150 size-2.5 cursor-pointer hover:scale-[1.4] ${index === current ? ' scale-[1.4]' : 'bg-opacity-50'}`} />
         })}
       </div>
     </div>

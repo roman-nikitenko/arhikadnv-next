@@ -5,14 +5,11 @@ import { PortfolioCard } from './PortfolioCard';
 import { PortfolioCardType } from '../types/portfolio';
 import { Modal } from './Modal';
 import { Carousel } from './Carousel';
-// import { ModalContext } from '../context/Context.tsx';
 
 export const PortfolioSection: React.FC = () => {
   const [modalIsOpen, setModalIsOpen] = useState<boolean>(false)
   const [activePortfolio, setActivePortfolio] = useState<PortfolioCardType | null>(null)
   const [current, setCurrent] = useState<number>(0)
-  
-  // const { projectsSectionRef } = useContext(ModalContext)
 
   const clickCardHandler = (card: PortfolioCardType) => {
     setModalIsOpen(true)
@@ -29,7 +26,7 @@ export const PortfolioSection: React.FC = () => {
       <Modal openModal={modalIsOpen} closeModal={closeHandler} >
         <Carousel current={current} setCurrent={setCurrent} images={activePortfolio?.listOfWorks} />
       </Modal>
-      <section className="section-md w-full scroll-mt-20">
+      <section id='projects' className="section-md w-full scroll-mt-20">
         <div className="flex flex-col gap-y-10 xl:overflow-hidden overflow-x-auto">
           <div className="flex md:px-0 px-4 flex-col gap-y-3">
             <p className="text-emerald-700 uppercase">/минулі проєкти</p>

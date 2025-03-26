@@ -7,7 +7,7 @@ export const AboutUsSection: React.FC = () => {
   };
 
   return (
-    <section className="section-md md:px-0 md:py-3 px-4 ">
+    <section id="company"  className="section-md items-center md:px-0 md:py-3 px-4 ">
       <div className='h-[440px] md:w-[400px] w-full bg-cover bg-no-repeat relative bg-[url("../public/plan3.jpg")]'>
         <div className="absolute -top-3 -z-20 -left-3">
           <div className="size-[130px] border border-black" />
@@ -20,7 +20,7 @@ export const AboutUsSection: React.FC = () => {
           />
         </div>
       </div>
-      <div className=" md:w-[500px] w-full flex flex-col md:gap-7 gap-5 justify-center ">
+      <div  className=" md:w-[500px] w-full flex flex-col md:gap-7 gap-5 justify-center ">
         <p className="text-emerald-700 uppercase">/Про нас</p>
         <p className="">
           <strong>Архікад-НВ</strong> – це команда професіоналів у сфері архітектури, будівництва

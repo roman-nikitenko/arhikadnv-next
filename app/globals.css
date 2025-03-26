@@ -25,6 +25,10 @@
   --light: #d9fbfb;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background-color);
   font-family: "Poppins", sans-serif;
