@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Архікад-НВ – архітектурні послуги",
-      }
+      },
     ],
   },
   twitter: {
@@ -40,9 +40,30 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Архікад-НВ",
+    url: "https://www.arhikadnv.com/",
+    logo: "https://www.arhikadnv.com/arhicadnv.jpg",
+    description:
+      "Оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+380980055404",
+      contactType: "customer service",
+      areaServed: "UA",
+      availableLanguage: "Ukrainian",
+    },
+  };
   return (
     <html lang="uk">
-      
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={inter.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
       </body>
