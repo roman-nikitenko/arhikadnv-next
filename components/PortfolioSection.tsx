@@ -34,7 +34,7 @@ export const PortfolioSection: React.FC = () => {
               Результати наших робіт <br/> не потребують пояснень
             </h2>
           </div>
-          <div className="flex overflow-x-auto gap-x-6">
+          <div className="flex overflow-x-auto gap-x-4 px-4">
             {portfolioList.map(card => (
               <div key={card.id} onClick={() => clickCardHandler(card)}>
                 <PortfolioCard

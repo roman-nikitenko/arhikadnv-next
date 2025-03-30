@@ -8,7 +8,7 @@ export const AboutUsSection: React.FC = () => {
 
   return (
     <section id="company"  className="section-md items-center md:px-0 md:py-3 px-4 ">
-      <div className='h-[440px] md:w-[400px] w-full bg-cover bg-no-repeat relative bg-[url("../public/plan3.jpg")]'>
+      <div className='aspect-square h-[440px] md:w-[400px] w-full bg-cover bg-no-repeat relative bg-[url("../public/plan3.jpg")]'>
         <div className="absolute -top-3 -z-20 -left-3">
           <div className="size-[130px] border border-black" />
         </div>
