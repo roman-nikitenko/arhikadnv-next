@@ -73,7 +73,7 @@ export const Form: React.FC = () => {
       className="flex flex-1 flex-col gap-y-4 w-full"
       onSubmit={onSubmit}
     >
-      <h1 className="m-auto text-2xl mb-8">Задай запитання</h1>
+      <h2 className="m-auto text-2xl mb-8">Задай запитання</h2>
       <div className="flex flex-col gap-y-4">
         <InputField
           type="text"

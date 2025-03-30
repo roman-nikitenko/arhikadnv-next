@@ -5,7 +5,7 @@ import { GlobalContextProvider } from "@/context/Context";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const WEB_URL = "https://arhikadnv-next.vercel.app/";
+const WEB_URL = "https://arhikadnv.com/";
 const WEB_NAME = "Архікад-НВ";
 const WEB_TITLE = "Архікад-НВ - Архітектурні послуги, оформлення документів";
 const WEB_DESCRIPTION =
