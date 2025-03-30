@@ -8,9 +8,10 @@ const inter = Inter({ subsets: ["latin"] });
 const WEB_URL = "https://arhikadnv-next.vercel.app/";
 const WEB_NAME = "Архікад-НВ";
 const WEB_TITLE = "Архікад-НВ - Архітектурні послуги, оформлення документів";
-const WEB_DESCRIPTION = "Архікад-НВ – оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
-const WEB_IMAGE = WEB_URL + 'arhicadnv.jpg';
-const WEB_EMAIL = 'arhicadnv@ukr.net';
+const WEB_DESCRIPTION =
+  "Архікад-НВ – оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
+const WEB_IMAGE = WEB_URL + "arhicadnv.jpg";
+const WEB_EMAIL = "arhicadnv@ukr.net";
 
 export const metadata: Metadata = {
   title: WEB_TITLE,
@@ -24,12 +25,13 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: false,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-  keywords: "архітектурні послуги, оформлення документів, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка, геодезія, кадастрові документи, архітектура",
+  keywords:
+    "архітектурні послуги, оформлення документів, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка, геодезія, кадастрові документи, архітектура",
   metadataBase: new URL(WEB_URL),
 
   openGraph: {
@@ -58,7 +60,7 @@ export const metadata: Metadata = {
     images: WEB_IMAGE,
   },
   verification: {
-    google: 'google',
+    google: "google",
     other: {
       me: [WEB_EMAIL, WEB_URL],
     },
@@ -76,7 +78,7 @@ export default function RootLayout({
     name: WEB_NAME,
     url: WEB_URL,
     logo: WEB_IMAGE,
-    description: WEB_DESCRIPTION ,
+    description: WEB_DESCRIPTION,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+380980055404",
@@ -92,6 +94,16 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-LTC4VQYJB9"
+        ></script>
+        <script>
+          
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-LTC4VQYJB9');
+        </script>
       </head>
       <body className={inter.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
