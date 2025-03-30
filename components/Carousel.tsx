@@ -34,7 +34,7 @@ export const Carousel: React.FC<CarouselProps> = ({ images = [], setCurrent, cur
         </button>
       </div>
       <div className="flex transition-transform ease-out duration-700" style={{ transform: `translateX(-${current * 100}%)` }}>
-        {images.map((image, index) => <img key={image + index} src={image} alt="Image" />  )}
+        {images.map((image, index) => <img key={image + index} loading="lazy" src={image} alt="Зображення конструкцій" />  )}
       </div>
       <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-4">
         {/* eslint-disable-next-line @typescript-eslint/no-unused-vars */}

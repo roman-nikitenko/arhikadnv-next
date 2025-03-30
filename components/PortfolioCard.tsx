@@ -2,7 +2,6 @@ import React from 'react';
 import arrow from '../public/icons/arrow-right.svg';
 import { typeWork } from '../types/portfolio';
 import { constructionSVG, designSVG, remodelingSVG } from '../public/iconsSVG';
-import Image from 'next/image';
 
 type PortfolioCardProps = {
   title: string;
@@ -39,12 +38,12 @@ export const PortfolioCard: React.FC<PortfolioCardProps> = ({ title, typeOfWork,
               <div className="size-5">{ correctIconWork(typeOfWork) }</div>
               <p className="text-xs">{typeOfWork}</p>
             </div>
-            <img src={arrow.src} alt='arrow right' className='size-4 -translate-x-3 group-hover:translate-x-0 transition'/>
+            <img loading="lazy" src={arrow.src} alt='Декоративна стрілка в право' className='size-4 -translate-x-3 group-hover:translate-x-0 transition'/>
           </div>
         </div>
       </div>
       <div className="absolute size-full z-20 bg-gradient-to-t from-black to-transparent opacity-70 p-6" />
-      <img src={backgroundImage} className="size-full object-cover bg-top z-10 group-hover:scale-110 transition" alt={`${title} image`} />
+      <img loading="lazy" src={backgroundImage} className="size-full object-cover bg-top z-10 group-hover:scale-110 transition" alt={`${title} зображення`} />
     </div>
   );
 };

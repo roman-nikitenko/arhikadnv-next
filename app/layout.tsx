@@ -98,12 +98,16 @@ export default function RootLayout({
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-LTC4VQYJB9"
         ></script>
-        <script>
-          
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-LTC4VQYJB9');
-        </script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || []; function gtag()
+              {dataLayer.push(arguments)}
+              gtag('js', new Date());
+              gtag('config', 'G-LTC4VQYJB9');
+            `
+          }}
+        ></script>
       </head>
       <body className={inter.className}>
         <GlobalContextProvider>{children}</GlobalContextProvider>
