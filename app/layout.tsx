@@ -9,14 +9,28 @@ const WEB_URL = "https://arhikadnv-next.vercel.app/";
 const WEB_NAME = "Архікад-НВ";
 const WEB_TITLE = "Архікад-НВ - Архітектурні послуги, оформлення документів";
 const WEB_DESCRIPTION = "Архікад-НВ – оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
-const WEB_IMAGE = WEB_URL + 'arhicadnv.jpg'
+const WEB_IMAGE = WEB_URL + 'arhicadnv.jpg';
+const WEB_EMAIL = 'arhicadnv@ukr.net';
 
 export const metadata: Metadata = {
   title: WEB_TITLE,
   description: WEB_DESCRIPTION,
   applicationName: WEB_NAME,
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   keywords: "архітектурні послуги, оформлення документів, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка, геодезія, кадастрові документи, архітектура",
+  metadataBase: new URL(WEB_URL),
 
   openGraph: {
     title: WEB_TITLE,
@@ -42,6 +56,12 @@ export const metadata: Metadata = {
     title: WEB_TITLE,
     description: WEB_DESCRIPTION,
     images: WEB_IMAGE,
+  },
+  verification: {
+    google: 'google',
+    other: {
+      me: [WEB_EMAIL, WEB_URL],
+    },
   },
 };
 
