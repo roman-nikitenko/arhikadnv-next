@@ -7,9 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 const WEB_URL = "https://arhikadnv.com/";
 const WEB_NAME = "Архікад НВ";
-const WEB_TITLE = "Архікад НВ - Архітектурні послуги в Бучі, оформлення документів";
+const WEB_TITLE =
+  "Архікад НВ - Архітектурні послуги в Бучі, оформлення документів";
 const WEB_DESCRIPTION =
-  "Архікад НВ – архітектурні послуги в Бучі. Оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
+  "Архікад НВ – архітектурні послуги в Бучі та Київській області: документи на будинок під ключ, будпаспорт, проєкти, МАФ, топозйомка, геодезія";
 const WEB_IMAGE = WEB_URL + "arhicadnv.jpg";
 const WEB_EMAIL = "arhicadnv@ukr.net";
 
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
     "будівельні послуги Буча",
     "проектування будинків Буча",
     "архітектурний проект Буча",
-    "дизайн проект Буча"
+    "дизайн проект Буча",
   ],
   metadataBase: new URL(WEB_URL),
 
@@ -94,7 +95,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport = {
-  width: 'device-width',
+  width: "device-width",
   initialScale: 1,
   maximumScale: 1,
 };
@@ -120,23 +121,23 @@ export default function RootLayout({
       "рекламні носії Буча",
       "топозйомка Буча",
       "геодезія Буча",
-      "кадастрові документи Буча"
+      "кадастрові документи Буча",
     ],
     address: {
       "@type": "PostalAddress",
-      "addressLocality": "Буча",
-      "addressRegion": "Київська область",
-      "addressCountry": "UA"
+      addressLocality: "Буча",
+      addressRegion: "Київська область",
+      addressCountry: "UA",
     },
     areaServed: {
       "@type": "City",
       name: "Буча",
       address: {
         "@type": "PostalAddress",
-        "addressLocality": "Буча",
-        "addressRegion": "Київська область",
-        "addressCountry": "UA"
-      }
+        addressLocality: "Буча",
+        addressRegion: "Київська область",
+        addressCountry: "UA",
+      },
     },
     contactPoint: {
       "@type": "ContactPoint",
@@ -144,15 +145,17 @@ export default function RootLayout({
       contactType: "customer service",
       areaServed: "Буча",
       availableLanguage: "Ukrainian",
-      email: WEB_EMAIL
+      email: WEB_EMAIL,
     },
-    sameAs: [
-      WEB_URL
-    ]
+    sameAs: [WEB_URL],
   };
   return (
     <html lang="uk">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content={WEB_DESCRIPTION} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -168,7 +171,7 @@ export default function RootLayout({
               {dataLayer.push(arguments)}
               gtag('js', new Date());
               gtag('config', 'G-LTC4VQYJB9');
-            `
+            `,
           }}
         ></script>
       </head>

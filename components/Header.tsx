@@ -26,7 +26,10 @@ export const Header: React.FC = () => {
   useNoScroll(isOpen);
 
   return (
-    <header id='home' className="header relative bg-cover md:bg-center overflow-hidden bg-[-300px] bg-no-repeat h-screen w-full mb-[80px]">
+    <header
+      id="home"
+      className="header relative bg-cover md:bg-center overflow-hidden bg-[-300px] bg-no-repeat h-screen w-full mb-[80px]"
+    >
       <div className="absolute inset-0 -z-10 bg-center bg-cover bg-[url('../public/arhicadnv-main.png')]" />
       <div className="bg-[#24272B]/[0.5] h-full">
         <div className="fixed z-50 w-full">
@@ -43,15 +46,14 @@ export const Header: React.FC = () => {
           <div className="h-screen flex items-end pb-20">
             <div className="title w-[700px] flex-col gap-y-2 text-white">
               <h1 className="text-[var(--light)] md:text-7xl font-bold mb-8 text-4xl">
-                {slogan}
+                Архітектурні послуги та оформлення документів у Бучі
               </h1>
-              <p className="md:text-base text-sm text-[var(--light)]">
-                Обираючи нас, ви отримуєте не просто архітекторів, а надійних
-                партнерів, які допоможуть оформити всі документи та реалізувати
-                ваш проєкт – від ідеї до будівництва. Ми поєднуємо
-                професіоналізм, креативність і точність, щоб створити простір,
-                який відповідає вашим потребам.
-              </p>
+              <h2 className="md:text-base text-sm text-[var(--light)]">
+                Від ідеї до будівництва — ми пропонуємо комплексні архітектурні
+                рішення, створення проєктів для житлових і комерційних об’єктів,
+                оформлення будівельного паспорта, технічної документації,
+                кадастрових номерів та всіх необхідних дозвільних документів.
+              </h2>
             </div>
           </div>
         </div>

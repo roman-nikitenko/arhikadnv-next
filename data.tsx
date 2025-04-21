@@ -11,7 +11,7 @@ import project3_1 from "./public/portfolio/project3/Screenshot 2024-07-01.jpg";
 import project3_2 from "./public/portfolio/project3/Screenshot 2024-07-02.jpg";
 import project3_3 from "./public/portfolio/project3/Screenshot 2024-07-03.jpg";
 
-export const slogan = "Здійснюємо архітектурні мрії перетворюючи їх в реальні рішення";
+export const slogan = "Архікад-НВ архітектурні послуги та оформлення документів у Бучі";
 export const phoneNumber = "(098) 005 54 04";
 export const address = "Вул Героїв Майдану 15 офіс 58, м.Буча";
 
