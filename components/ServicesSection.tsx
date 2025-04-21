@@ -30,8 +30,7 @@ export const ServicesSection: React.FC = () => {
   return (
     <section id='service' className="section-md md:px-0 px-4 scroll-mt-28">
       <div className="w-full flex flex-col gap-y-8">
-        <SectionSubTitle title="основні послуги" />
-        <h2 className="md:text-6xl text-5xl font-bold">Послуги</h2>
+        
         <div
           className="flex flex-col md:flex-row gap-3 md:justify-between md:h-[430px] h-[750px]"
         >

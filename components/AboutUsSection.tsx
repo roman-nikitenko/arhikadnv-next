@@ -23,7 +23,7 @@ export const AboutUsSection: React.FC = () => {
       <div  className=" md:w-[500px] w-full flex flex-col md:gap-7 gap-5 justify-center ">
         <p className="text-emerald-700 uppercase">/Про нас</p>
         <p className="">
-          <strong>Архікад-НВ</strong> – це команда професіоналів у сфері архітектури, будівництва
+          <strong>Архікад НВ</strong> – це команда професіоналів у сфері архітектури, будівництва
           та землеустрою. Ми спеціалізуємося на оформленні документів на будинок
           під ключ, розробці проєктів на будинок, проєктів на комерцію та
           тимчасових споруд (МАФ).
@@ -46,7 +46,7 @@ export const AboutUsSection: React.FC = () => {
         </p>
         <p>
           Ми гарантуємо оперативність, професіоналізм та якість виконання робіт.
-          Звертайтесь до Архікад-НВ – ми зробимо все для вашого комфорту та
+          Звертайтесь до Архікад НВ – ми зробимо все для вашого комфорту та
           законного оформлення нерухомості!
         </p>
         <div className="md:flex md:justify-between md:flex-row flex-col hidden w-full items-center gap-5 ">

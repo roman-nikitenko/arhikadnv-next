@@ -6,10 +6,10 @@ import { GlobalContextProvider } from "@/context/Context";
 const inter = Inter({ subsets: ["latin"] });
 
 const WEB_URL = "https://arhikadnv.com/";
-const WEB_NAME = "Архікад-НВ";
-const WEB_TITLE = "Архікад-НВ - Архітектурні послуги, оформлення документів";
+const WEB_NAME = "Архікад НВ";
+const WEB_TITLE = "Архікад НВ - Архітектурні послуги в Бучі, оформлення документів";
 const WEB_DESCRIPTION =
-  "Архікад-НВ – оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
+  "Архікад НВ – архітектурні послуги в Бучі. Оформлення документів на будинок під ключ, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка 1:500, геодезія, кадастрові документи.";
 const WEB_IMAGE = WEB_URL + "arhicadnv.jpg";
 const WEB_EMAIL = "arhicadnv@ukr.net";
 
@@ -30,8 +30,33 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  keywords:
-    "архітектурні послуги, оформлення документів, будівельний паспорт, проєкти на будинки, МАФ, рекламні носії, топозйомка, геодезія, кадастрові документи, архітектура",
+  keywords: [
+    "архітектурні послуги в Бучі",
+    "оформлення документів Буча",
+    "будівельний паспорт Буча",
+    "проєкти на будинки Буча",
+    "МАФ Буча",
+    "рекламні носії Буча",
+    "топозйомка Буча",
+    "геодезія Буча",
+    "кадастрові документи Буча",
+    "архітектура Буча",
+    "архітектурне проектування Буча",
+    "будівництво Буча",
+    "дизайн інтер'єру Буча",
+    "реконструкція Буча",
+    "ремонт Буча",
+    "архітектурна студія Буча",
+    "проектна документація Буча",
+    "земельні роботи Буча",
+    "геодезичні послуги Буча",
+    "кадастровий облік Буча",
+    "архітектурні рішення Буча",
+    "будівельні послуги Буча",
+    "проектування будинків Буча",
+    "архітектурний проект Буча",
+    "дизайн проект Буча"
+  ],
   metadataBase: new URL(WEB_URL),
 
   openGraph: {
@@ -39,16 +64,17 @@ export const metadata: Metadata = {
     description: WEB_DESCRIPTION,
     url: WEB_URL,
     countryName: "Ukraine",
+    locale: "uk_UA",
+    siteName: WEB_NAME,
+    type: "website",
     images: [
       {
         url: WEB_IMAGE,
         width: 1200,
         height: 630,
-        alt: "Архікад-НВ – архітектурні послуги",
+        alt: "Архікад НВ – архітектурні послуги в Бучі",
       },
     ],
-    siteName: WEB_NAME,
-    type: "website",
   },
 
   creator: "Banzaifun",
@@ -67,6 +93,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -79,13 +111,44 @@ export default function RootLayout({
     url: WEB_URL,
     logo: WEB_IMAGE,
     description: WEB_DESCRIPTION,
+    keywords: [
+      "архітектурні послуги в Бучі",
+      "оформлення документів Буча",
+      "будівельний паспорт Буча",
+      "проєкти на будинки Буча",
+      "МАФ Буча",
+      "рекламні носії Буча",
+      "топозйомка Буча",
+      "геодезія Буча",
+      "кадастрові документи Буча"
+    ],
+    address: {
+      "@type": "PostalAddress",
+      "addressLocality": "Буча",
+      "addressRegion": "Київська область",
+      "addressCountry": "UA"
+    },
+    areaServed: {
+      "@type": "City",
+      name: "Буча",
+      address: {
+        "@type": "PostalAddress",
+        "addressLocality": "Буча",
+        "addressRegion": "Київська область",
+        "addressCountry": "UA"
+      }
+    },
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+380980055404",
       contactType: "customer service",
-      areaServed: "UA",
+      areaServed: "Буча",
       availableLanguage: "Ukrainian",
+      email: WEB_EMAIL
     },
+    sameAs: [
+      WEB_URL
+    ]
   };
   return (
     <html lang="uk">
